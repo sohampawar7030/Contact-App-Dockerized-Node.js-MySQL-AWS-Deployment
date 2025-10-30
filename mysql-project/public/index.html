@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact App</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>📇 Contact Manager</h1>
+    <p class="subtitle">Store and view your personal contacts easily</p>
+
+    <!-- Contact Form -->
+    <form id="contactForm" action="/add" method="POST" class="contact-form">
+      <input type="text" name="username" placeholder="👤 Full Name" required />
+      <input type="text" name="phone" placeholder="📞 Phone Number" required />
+      <input type="email" name="email" placeholder="📧 Email Address" required />
+      <button type="submit">➕ Add Contact</button>
+    </form>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Button to Fetch Contacts -->
+    <button id="showContacts" class="show-btn">👀 Show All Contacts</button>
+
+    <!-- List of Contacts -->
+    <ul id="contactsList" class="contact-list"></ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    💡 Developed by <strong>Soham Pawar</strong>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
